@@ -1,0 +1,71 @@
+<div class="main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 mr-auto">
+        <div class="card card-signup text-center">
+          <div class="card-header ">
+            <h4 class="card-title">Login</h4>
+            <div class="social">
+              <button
+                (click)="login()"
+                class="btn btn-icon btn-round btn-twitter"
+              >
+                <i class="fab fa-google"></i>
+              </button>
+              <button class="btn btn-icon btn-round btn-dribbble">
+                <i class="fab fa-dribbble"></i>
+              </button>
+              <button class="btn btn-icon btn-round btn-facebook">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+              <h5 class="card-description">or be classical</h5>
+            </div>
+          </div>
+          <div class="card-body ">
+            <form class="form" method="" action="">
+              <div
+                class="input-group"
+                [ngClass]="{ 'input-group-focus': focus1 === true }"
+              >
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="now-ui-icons ui-1_email-85"></i>
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Email..."
+                  (focus)="focus1 = true"
+                  (blur)="focus1 = false"
+                />
+              </div>
+              <div
+                class="input-group"
+                [ngClass]="{ 'input-group-focus': focus2 === true }"
+              >
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="now-ui-icons text_caps-small"></i>
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Password..."
+                  class="form-control"
+                  (focus)="focus2 = true"
+                  (blur)="focus2 = false"
+                />
+              </div>
+            </form>
+          </div>
+
+          <div class="card-footer ">
+            <a href="#pablo" class="btn btn-primary btn-round btn-lg">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,92 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="title">Create New CW Request</h5>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Account Name</label>
+                  <input type="text" class="form-control"  placeholder="Account Code" value="11234490">
+                </div>
+                <div class="form-group">
+                  <label>Account Number</label>
+                  <input type="text" class="form-control" placeholder="Account Name" value=" ">
+                </div>
+
+                <div class="form-group">
+                  <label for="text">Ammount</label>
+                  <input name="text" id="email" type="text" class="form-control ng-untouched ng-pristine ng-invalid" placeholder="Ammount">
+                </div>
+
+              </div>
+              
+          
+              
+            </div>
+            <div class="row">
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label for="text">Currencry</label>
+                  <input name="text" id="email" type="text" class="form-control ng-untouched ng-pristine ng-invalid" placeholder="USD">
+                </div>
+                <div class="form-group">
+                  <label>Benifichary Bank</label>
+                  <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
+                </div>
+              </div>
+            
+            </div>
+            <div class="row">
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Address</label>
+                  <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                  <label>City</label>
+                  <input type="text" class="form-control" placeholder="City" value="">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label>Country</label>
+                  <input type="text" class="form-control" placeholder="Country" value="">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label>Postal Code</label>
+                  <input type="number" class="form-control" placeholder=" ">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+
+
+                  <h3>Upload your bank Statement</h3>
+               
+                    <input type="file" ng2FileSelect [uploader]="uploader" />
+              
+
+              </div>
+            </div>
+          </form>
+        </div>
+        <div  class="col-md-9 text-right"  style="float: right;"><button  class=" btn btn-danger" type="submit"> Submit </button></div>
+      </div>
+    </div>
+   
+  </div>
+</div>
